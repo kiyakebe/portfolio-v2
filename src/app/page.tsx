@@ -1,12 +1,17 @@
-import { Sidebar } from "@/components/Sidebar";
+import { ScrollSpySidebar } from "@/components/Sidebar";
 import { ThemeToggle } from "@/components/ThemeToggler";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 export default function Home() {
   return (
-    <div>
-      <Sidebar />
-      <ThemeToggle />
-      <main>Kiya Kebe</main>
-    </div>
+    <SidebarProvider>
+      <div className="relative  w-full">
+        <ThemeToggle />
+
+        <ScrollSpySidebar />
+
+        <main>Kiya Kebe</main>
+      </div>
+    </SidebarProvider>
   );
 }

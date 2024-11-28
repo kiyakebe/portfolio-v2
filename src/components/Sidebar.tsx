@@ -1,50 +1,53 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+"use client"
 
-export function Sidebar() {
+import { useEffect, useState } from "react"
+import { Sidebar, SidebarContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
+
+const sections = ["Home", "About", "Resume", "Portfolio", "Blogs", "Contact"]
+
+export function ScrollSpySidebar() {
+  const [activeSection, setActiveSection] = useState("Home")
+
+  useEffect(() => {
+    const observers = sections.map((section) => {
+      const element = document.getElementById(section.toLowerCase())
+      if (!element) return null
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveSection(section)
+          }
+        },
+        { threshold: 0.5 }
+      )
+
+      observer.observe(element)
+      return observer
+    })
+
+    return () => {
+      observers.forEach((observer) => observer?.disconnect())
+    }
+  }, [])
+
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
-      </SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
-        </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
-      </SheetContent>
-    </Sheet>
+    <Sidebar className="w-64 border-r">
+      <SidebarContent>
+        <SidebarMenu>
+          {sections.map((section) => (
+            <SidebarMenuItem key={section}>
+              <SidebarMenuButton
+                asChild
+                isActive={activeSection === section}
+              >
+                <a href={`#${section.toLowerCase()}`}>{section}</a>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          ))}
+        </SidebarMenu>
+      </SidebarContent>
+    </Sidebar>
   )
 }
+
