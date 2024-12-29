@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ffc349;
+  --primary: hsl(40, 100%, 64%);
   --bg-primary: #f7f7f7;
 }
 
