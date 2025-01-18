@@ -2,7 +2,7 @@ import { ArrowDown, Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <section className="min-h-[87vh] flex items-center overflow-x-hidden relative">
       {/* <Image
@@ -60,6 +60,4 @@ const Hero = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}
