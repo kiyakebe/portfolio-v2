@@ -1,11 +1,8 @@
-import { ThemeToggle } from "@/components/ThemeToggler";
 
 export default function Home() {
   return (
-    <div className="relative  w-full">
-      <ThemeToggle />
-
+    <section className="relative  w-full">
       <main>Kiya Kebe</main>
-    </div>
+    </section>
   );
 }
