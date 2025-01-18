@@ -1,8 +1,11 @@
+import Contact from "@/components/home-page-components/Contact";
+import Hero from "@/components/home-page-components/Hero";
 
 export default function Home() {
   return (
-    <section className="relative  w-full">
-      <main>Kiya Kebe</main>
-    </section>
+    <>
+      <Hero />
+      <Contact />
+    </>
   );
 }
