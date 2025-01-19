@@ -44,7 +44,7 @@ const Testimonial = () => {
     >
       <div className="flex justify-center my-6">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
-          My Client's Stories
+          Testimonial
         </h2>
       </div>
 
