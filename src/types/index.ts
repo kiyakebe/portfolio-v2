@@ -16,3 +16,12 @@ export interface ServicesCardProps {
   description: string;
   index: number;
 }
+
+export interface PortfolioCardProps {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  categoryLabel: string;
+  link: string;
+}

@@ -19,14 +19,15 @@ const TestimonialCard = ({
 }: TestimonialType) => {
   return (
     <CarouselItem className="pl-2 basis-full md:basis-1/2 lg:basis-1/3 md:pl-4">
-      <Card className="w-full max-w-md mx-auto overflow-hidden transition-all">
+      <Card className="w-full max-w-md mx-auto overflow-hidden transition-all dark:bg-[#1f1930] ">
         <CardContent className="p-6">
           <div className="flex flex-col items-center text-center">
             <Quote className="w-10 h-10 mb-4 text-primary opacity-50" />
             <blockquote className="mb-4">{content}</blockquote>
-            <Avatar className="w-20 h-20 border-4  shadow-lg">
+            <Avatar className="w-20 h-20">
               <AvatarImage
-                src={image || "/placeholder.png?height=200&width=200"}
+                // src={image || "/user.png?height=200&width=200"}
+                src={"/user.png?height=200&width=200"}
                 alt={name}
               />
               <AvatarFallback>SJ</AvatarFallback>
@@ -45,7 +46,7 @@ const TestimonialCard = ({
 const Testimonial = () => {
   return (
     <div
-      id="Testimonial"
+      id="testimonial"
       className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
     >
       <div className="flex justify-center my-6">

@@ -7,7 +7,7 @@ interface SkillCardProps {
 export function SkillCard({ name, icon }: SkillCardProps) {
   return (
     <div className="flex flex-col items-center group">
-      <div className="dark:bg-[#1a1528] bg-slate-50 rounded-lg mb-4 w-32 h-32 flex items-center justify-center transition-transform hover:scale-105">
+      <div className="dark:bg-[#1f1930] bg-slate-50 rounded-lg mb-4 w-32 h-32 flex items-center justify-center transition-transform hover:scale-105">
         <img
           src={icon || "/skill/skill-default.png"}
           alt={`${name} icon`}
@@ -54,8 +54,8 @@ const skills: SkillCardProps[] = [
 
 const Skills = () => {
   return (
-    <section className="w-full dark:bg-slate-900 bg-slate-100 py-16 px-4 md:px-6 lg:px-8">
-      <div className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
+    <section className="w-full dark:bg-[#1a1528] py-16 px-4 md:px-6 lg:px-8">
+      <div className="lg:container mx-auto px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
             My Skills

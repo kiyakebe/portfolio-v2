@@ -2,19 +2,19 @@ import { NavigationItemsType } from "@/types";
 
 export const navigationLinks: NavigationItemsType[] = [
   {
-    label: "Home",
-    href: "/",
+    label: "Services",
+    href: "/#services",
   },
   {
     label: "Testimonial",
     href: "/#testimonial",
   },
   {
-    label: "FAQ",
-    href: "/#faq",
+    label: "Contact",
+    href: "/#contact",
   },
   {
-    label: "About us",
-    href: "/about",
+    label: "Testimonial",
+    href: "/#testimonial",
   },
 ];
