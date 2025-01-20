@@ -89,7 +89,7 @@ export default function Contact() {
   return (
     <section className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
       <div className="grid lg:grid-cols-2 gap-12 p-6">
-        <div className="bg-[#1a1528] p-8 rounded-2xl">
+        <div className="bg-slate-50 dark:bg-[#1a1528] p-8 rounded-2xl">
           <div className="mb-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
               Let's work together!

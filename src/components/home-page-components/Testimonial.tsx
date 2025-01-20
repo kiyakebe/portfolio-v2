@@ -11,23 +11,29 @@ import { Quote } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import { testimonials } from "@/constants/testimonial_data";
 
-const TestimonialCard = ({ name, content }: TestimonialType) => {
+const TestimonialCard = ({
+  name,
+  content,
+  image,
+  position,
+}: TestimonialType) => {
   return (
     <CarouselItem className="pl-2 basis-full md:basis-1/2 lg:basis-1/3 md:pl-4">
       <Card className="w-full max-w-md mx-auto overflow-hidden transition-all">
         <CardContent className="p-6">
           <div className="flex flex-col items-center text-center">
             <Quote className="w-10 h-10 mb-4 text-primary opacity-50" />
-            <blockquote className="mb-4 text-lg ">{content}</blockquote>
+            <blockquote className="mb-4">{content}</blockquote>
             <Avatar className="w-20 h-20 border-4  shadow-lg">
               <AvatarImage
-                src="/placeholder.png?height=200&width=200"
+                src={image || "/placeholder.png?height=200&width=200"}
                 alt={name}
               />
               <AvatarFallback>SJ</AvatarFallback>
             </Avatar>
             <div className="mt-4">
               <h3 className="text-xl font-semibold ">{name}</h3>
+              <p className="text-lg">{position}</p>
             </div>
           </div>
         </CardContent>

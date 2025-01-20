@@ -12,8 +12,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    console.log(data)
-
     const { firstName, lastName, email, phone, service, message } = data.body;
 
     const transporter = nodemailer.createTransport({

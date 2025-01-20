@@ -49,11 +49,16 @@ const Header = () => {
               href="/"
               className="md:text-xl lg:text-2xl font-semibold text-slate-800 dark:text-slate-100 items-center flex z-40"
             >
-              {/* <img
-                src="/logo src"
+              <img
+                src="/logoDark.png"
                 alt="Logo"
-                className="me-4 w-10 lg:w-50"
-              /> */}
+                className="me-4 w-8 hidden dark:inline-block"
+              />
+              <img
+                src="/logoLight.png"
+                alt="Logo"
+                className="me-4 w-8 dark:hidden"
+              />
               Kiya Kebe
             </a>
           </div>

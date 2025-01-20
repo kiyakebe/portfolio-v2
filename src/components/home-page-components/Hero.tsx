@@ -34,12 +34,14 @@ export default function Hero() {
                 </Link>
                 <Link
                   href="https://github.com/kiyakebe/"
+                  target="__blank"
                   className="flex items-center border-2 border-[#834EF0] p-3 rounded-full aspect-square"
                 >
                   <Github className="mx-auto group-hover:ms-4 text-[#834EF0] " />
                 </Link>
                 <Link
                   href="https://www.linkedin.com/in/kiyakebe/"
+                  target="__blank"
                   className="flex items-center border-2 border-[#834EF0] p-3 rounded-full"
                 >
                   <Linkedin className="mx-auto group-hover:ms-4 text-[#834EF0] " />
