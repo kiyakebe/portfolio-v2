@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px] border-t-2">
+    <footer className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 py-24 md:lg:py-24 lg:max-w-[1440px] border-t-2">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-center space-y-8">
           <Link href="/" className="block">

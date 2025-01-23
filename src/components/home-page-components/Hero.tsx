@@ -26,7 +26,9 @@ export default function Hero() {
               </p>
               <div className="flex items-center gap-4">
                 <Link
-                  href="#download"
+                  href="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
+                  download="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
+                  target="__blank"
                   className="bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white flex self-center py-4 px-10 rounded-3xl"
                 >
                   Download CV
@@ -49,14 +51,16 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 grid place-items-center">
-            <Image
-              src="/placeholder.png?height=600&width=600"
-              alt="Expert Blog"
-              width={600}
-              height={400}
-              className="rounded-lg"
-            />
+          <div className="md:w-1/2 flex justify-end">
+            <div className="bg-slate-600 rounded-lg 600 p-1">
+              <Image
+                src="/kiya-kebe.webp?height=400&width=400"
+                alt="Expert Blog"
+                width={450}
+                height={400}
+                className="rounded-lg grayscale-[90%]"
+              />
+            </div>
           </div>
         </div>
       </div>

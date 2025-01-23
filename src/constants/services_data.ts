@@ -5,24 +5,24 @@ export const services = [
     icon: Code,
     title: "Frontend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
+      "Expert in building dynamic, scalable, and high-performance web applications using NextJS and ReactJS, focusing on seamless user experiences.",
   },
   {
     icon: Server,
     title: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
+      "Proficient in developing robust and efficient server-side applications with NestJS, ensuring secure and scalable backend architectures.",
   },
   {
     icon: PenTool,
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
+      "Skilled in creating intuitive, user-centric interfaces and prototypes using Figma, emphasizing aesthetics and functionality.",
   },
   {
     icon: Map,
     title: "Product Management",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat.",
+      "Experienced in overseeing product lifecycles, from ideation to delivery, ensuring alignment with business goals and user needs.",
   },
 ];

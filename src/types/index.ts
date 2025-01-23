@@ -20,7 +20,7 @@ export interface ServicesCardProps {
 export interface PortfolioCardProps {
   id: number;
   title: string;
-  category: string;
+  category: string[];
   image: string;
   categoryLabel: string;
   link: string;

@@ -33,14 +33,14 @@ import { toast } from "react-toastify";
 import axios from "axios";
 
 const services = [
+  { value: "fd", label: "Frontend Development" },
+  { value: "bd", label: "Backend Development" },
   { value: "web", label: "Web Development" },
   { value: "design", label: "UI/UX Design" },
-  { value: "content", label: "Content Writing" },
-  { value: "marketing", label: "Digital Marketing" },
+  { value: "pm", label: "Product Management" },
 ];
 
 export default function Contact() {
-
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -87,9 +87,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
+    <section
+      id="contact"
+      className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
+    >
       <div className="grid lg:grid-cols-2 gap-12 p-6">
-        <div className="bg-slate-50 dark:bg-[#1a1528] border p-8 rounded-2xl">
+        <div className="bg-slate-50 dark:bg-[#1a1528] border p-8 rounded-lg">
           <div className="mb-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
               Let's work together!
@@ -221,11 +224,10 @@ export default function Contact() {
           </Form>
         </div>
 
-        {/* Contact Info Section */}
         <div className="flex flex-col p-6 justify-center gap-8">
           <Image
-            src="/placeholder.png?height=600&width=600"
-            alt="Expert Blog"
+            src="/contact.png?height=600&width=600"
+            alt="Contact Kiya Kebe"
             width={600}
             height={400}
             className="rounded-lg mx-auto"

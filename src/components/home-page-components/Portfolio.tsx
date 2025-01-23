@@ -29,10 +29,15 @@ const PortfolioCard = ({
       <div className="p-6 flex items-start justify-between">
         <div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <p className="dark:text-gray-400 text-gray-600 text-sm">{category}</p>
+          <p className="dark:text-gray-400 text-gray-600 text-sm">
+            {category.map((cat) => {
+              return <span className="me-3">{cat}</span>;
+            })}
+          </p>
         </div>
         <Link
           href={link}
+          target="__blank"
           className="rounded-full text-violet-400 hover:text-violet-300 hover:bg-violet-600/20 p-3"
         >
           <ArrowUpRight className="h-5 w-5" />
@@ -47,7 +52,7 @@ export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredProjects = projects.filter(
-    (project) => activeCategory === "all" || project.category === activeCategory
+    (project) => activeCategory === "all" || project.category.includes(activeCategory)
   );
 
   return (
@@ -55,7 +60,7 @@ export default function Portfolio() {
       <div className="mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
-            Prtfolio Projects
+            Portfolio Projects
           </h2>
 
           <div className="flex flex-wrap justify-center gap-3">
