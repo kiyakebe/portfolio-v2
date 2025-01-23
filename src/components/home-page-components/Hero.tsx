@@ -22,7 +22,7 @@ export default function Hero() {
               </h1>
               <p className="text-xl md:text-2xl">
                 I break down complex user experinece problems to create
-                integritiy focussed solutions that connect billions of people
+                integritiy focussed solutions that connect you with your clients
               </p>
               <div className="flex items-center gap-4">
                 <Link

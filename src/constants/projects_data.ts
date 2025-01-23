@@ -26,7 +26,7 @@ export const projects: PortfolioCardProps[] = [
   },
   {
     id: 3,
-    title: "Litigation Mobile App",
+    title: "Restaurant Landing Page",
     category: ["landing-page"],
     image: "/projects/restaurant.png",
     categoryLabel: "Mobile App",
