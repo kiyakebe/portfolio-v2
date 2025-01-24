@@ -225,13 +225,14 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col p-6 justify-center gap-8">
-          <Image
+          {/* <Image
             src="/contact.png?height=600&width=600"
             alt="Contact Kiya Kebe"
             width={600}
             height={400}
             className="rounded-lg mx-auto"
-          />
+          /> */}
+          <img src="/contact.svg" alt="" />
         </div>
       </div>
     </section>

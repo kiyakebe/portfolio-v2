@@ -30,8 +30,8 @@ const PortfolioCard = ({
         <div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="dark:text-gray-400 text-gray-600 text-sm">
-            {category.map((cat) => {
-              return <span className="me-3">{cat}</span>;
+            {category.map((cat, index) => {
+              return <span className="me-3" key={index}>{cat}</span>;
             })}
           </p>
         </div>
