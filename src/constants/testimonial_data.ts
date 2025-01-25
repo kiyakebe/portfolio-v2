@@ -22,4 +22,11 @@ export const testimonials: TestimonialType[] = [
     image: "https://randomuser.me/api/portraits",
     position: "Software Engineer",
   },
+  {
+    name: "Tolosa Mitiku",
+    content:
+      "I had an amazing time working with Kiya, and I am genuinely impressed by his expertise and professionalism. Throughout the entire process, he delivered outstanding work, carefully managing every detail. I highly recommend working with him.",
+    image: "https://randomuser.me/api/portraits",
+    position: "Head of Education, A2sv",
+  },
 ];

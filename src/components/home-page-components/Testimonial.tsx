@@ -49,21 +49,24 @@ const Testimonial = () => {
       id="testimonial"
       className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
     >
-      <div className="flex justify-center my-6">
+      <div className="flex justify-center my-6 p-6">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
           Testimonial
         </h2>
       </div>
 
-      <Carousel opts={{ loop: true }}>
+      <Carousel opts={{ loop: true }} className="p-6">
         <CarouselContent className="-ml-2 md:-ml-4">
           {testimonials.map((item, index) => (
             <TestimonialCard key={index} {...item} />
           ))}
         </CarouselContent>
-        <div className="relative top-8 md:static">
-          <CarouselPrevious className="right-24 left-auto md:right-auto md:-left-12" />
-          <CarouselNext className="right-10 md:-right-12" />
+        {/* <div className="relative top-8 md:static"> */}
+        <div className="relative top-10">
+          {/* <CarouselPrevious className="right-24 left-auto md:right-auto md:-left-12" /> */}
+          <CarouselPrevious className="right-24 left-auto" />
+          {/* <CarouselNext className="right-10 md:-right-12" /> */}
+          <CarouselNext className="right-10" />
         </div>
       </Carousel>
     </div>

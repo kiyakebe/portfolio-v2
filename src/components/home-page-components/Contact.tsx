@@ -89,7 +89,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
+      className="lg:container mx-auto mt-8 px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
     >
       <div className="grid lg:grid-cols-2 gap-12 p-6">
         <div className="bg-slate-50 dark:bg-[#1a1528] border p-8 rounded-lg">

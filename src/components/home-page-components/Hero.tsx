@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-[87vh] flex items-center overflow-x-hidden relative">
+    <section className="min-h-[87vh] flex items-center  relative">
       {/* <Image
         src="/hero.png"
         alt="hero bg"
@@ -12,7 +12,7 @@ export default function Hero() {
         height={900}
         className="rounded-lg hidden md:block -right-24 -top-64 absolute -z-10"
       /> */}
-      <div className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
+      <div className="mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
         <div className="flex flex-col  gap-x-10 md:flex-row">
           <div className=" md:w-1/2 p-6 grid place-items-center">
             <div className="flex flex-col justify-center space-y-6">
@@ -24,7 +24,7 @@ export default function Hero() {
                 I break down complex user experinece problems to create
                 integritiy focussed solutions that connect you with your clients
               </p>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
                   download="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
@@ -51,14 +51,14 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-end">
-            <div className="bg-slate-600 rounded-lg 600 p-1">
+          <div className="md:w-1/2 flex justify-center md:justify-end p-6">
+            <div className="rounded-lg">
               <Image
                 src="/kiya-kebe.webp?height=400&width=400"
                 alt="Expert Blog"
                 width={450}
                 height={400}
-                className="rounded-lg grayscale-[90%]"
+                className="rounded-lg grayscale-[90%] border-4 border-slate-600"
               />
             </div>
           </div>

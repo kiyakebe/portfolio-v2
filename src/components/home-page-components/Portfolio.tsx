@@ -57,7 +57,7 @@ export default function Portfolio() {
 
   return (
     <section className="lg:container mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
-      <div className="mx-auto">
+      <div className="mx-auto p-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
             Portfolio Projects
