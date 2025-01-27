@@ -26,28 +26,30 @@ export default function Hero() {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Link
-                  href="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
-                  download="https://drive.google.com/file/d/1r44vR0SklI08MoMLA-jYdwl1_MbOcQKM/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1N6FuYk4mb6A23wrRzh97phtR1tG8Kgky/view?usp=sharing"
+                  download="https://drive.google.com/file/d/1N6FuYk4mb6A23wrRzh97phtR1tG8Kgky/view?usp=sharing"
                   target="__blank"
                   className="bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white flex self-center py-4 px-10 rounded-3xl"
                 >
                   Download CV
                   <ArrowDown className="h-6 w-6 me-4 ms-4" />
                 </Link>
-                <Link
-                  href="https://github.com/kiyakebe/"
-                  target="__blank"
-                  className="flex items-center border-2 border-[#834EF0] p-3 rounded-full aspect-square"
-                >
-                  <Github className="mx-auto group-hover:ms-4 text-[#834EF0] " />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/kiyakebe/"
-                  target="__blank"
-                  className="flex items-center border-2 border-[#834EF0] p-3 rounded-full"
-                >
-                  <Linkedin className="mx-auto group-hover:ms-4 text-[#834EF0] " />
-                </Link>
+                <div className="flex gap-4">
+                  <Link
+                    href="https://github.com/kiyakebe/"
+                    target="__blank"
+                    className="flex items-center border-2 border-[#834EF0] p-3 rounded-full aspect-square"
+                  >
+                    <Github className="mx-auto group-hover:ms-4 text-[#834EF0] " />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/kiyakebe/"
+                    target="__blank"
+                    className="flex items-center border-2 border-[#834EF0] p-3 rounded-full"
+                  >
+                    <Linkedin className="mx-auto group-hover:ms-4 text-[#834EF0] " />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
