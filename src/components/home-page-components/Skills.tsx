@@ -14,13 +14,15 @@ export function SkillCard({ name, icon }: SkillCardProps) {
           className="w-20 grayscale-[90%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110 opacity-50 group-hover:opacity-100 w-60px"
         />
       </div>
-      <div className="text-violet-400"><p>{name}</p></div>
+      <div className="text-violet-400">
+        <p>{name}</p>
+      </div>
     </div>
   );
 }
 
 const skills: SkillCardProps[] = [
-  { 
+  {
     name: "Next.js",
     icon: "/skill/nextjs.png",
     category: "frontend",
@@ -29,6 +31,11 @@ const skills: SkillCardProps[] = [
     name: "React",
     icon: "/skill/react.png",
     category: "frontend",
+  },
+  {
+    name: "Express",
+    icon: "/skill/express.png",
+    category: "design",
   },
   {
     name: "NestJS",
@@ -44,11 +51,6 @@ const skills: SkillCardProps[] = [
     name: "JavaScript",
     icon: "/skill/js.png",
     category: "frontend",
-  },
-  {
-    name: "Figma",
-    icon: "/skill/figma.png",
-    category: "design",
   },
 ];
 
