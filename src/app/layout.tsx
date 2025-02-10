@@ -18,7 +18,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kiya Kebe | Web Developer & Designer",
+  title: "Kiya Kebe | Fullstack Web Developer & Designer",
   description: "I break down complex user experinece problems to create integritiy focussed solutions that connect you with your clients",
   icons: {
     icon: "/logoLight.png",
