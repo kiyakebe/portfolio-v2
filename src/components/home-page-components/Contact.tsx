@@ -27,10 +27,11 @@ import {
   type ContactFormValues,
 } from "@/schemas/contact-form-schema";
 
-import Image from "next/image";
 import { toast } from "react-toastify";
 
 import axios from "axios";
+import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   { value: "fd", label: "Frontend Development" },
@@ -38,6 +39,7 @@ const services = [
   { value: "web", label: "Web Development" },
   { value: "design", label: "UI/UX Design" },
   { value: "pm", label: "Product Management" },
+  { value: "Other", label: "Other" },
 ];
 
 export default function Contact() {
@@ -91,8 +93,8 @@ export default function Contact() {
       id="contact"
       className="lg:container mx-auto mt-8 px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]"
     >
-      <div className="grid lg:grid-cols-2 gap-12 p-6">
-        <div className="bg-slate-50 dark:bg-[#1a1528] border p-8 rounded-lg">
+      <div className="grid lg:grid-cols-3 gap-12 p-6">
+        <div className="lg:col-span-2 border p-8 rounded-lg">
           <div className="mb-8 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
               Let's work together!
@@ -110,7 +112,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="First name"
-                          className="bg-transparent py-6 border-violet-900 focus-visible:ring-violet-600 transition-all duration-200"
+                          className="bg-transparent py-6 focus-visible:ring-violet-600 transition-all duration-200"
                           {...field}
                         />
                       </FormControl>
@@ -126,7 +128,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Last name"
-                          className="bg-transparent py-6 border-violet-900 focus-visible:ring-violet-600"
+                          className="bg-transparent py-6 focus-visible:ring-violet-600"
                           {...field}
                         />
                       </FormControl>
@@ -145,7 +147,7 @@ export default function Contact() {
                         <Input
                           type="email"
                           placeholder="Email address"
-                          className="bg-transparent py-6 border-violet-900 focus-visible:ring-violet-600"
+                          className="bg-transparent py-6 focus-visible:ring-violet-600"
                           {...field}
                         />
                       </FormControl>
@@ -162,7 +164,7 @@ export default function Contact() {
                         <Input
                           type="tel"
                           placeholder="Phone number"
-                          className="bg-transparent py-6 border-violet-900 focus-visible:ring-violet-600"
+                          className="bg-transparent py-6 focus-visible:ring-violet-600"
                           {...field}
                         />
                       </FormControl>
@@ -181,7 +183,7 @@ export default function Contact() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full py-6 bg-transparent border-violet-900 focus:ring-violet-600">
+                        <SelectTrigger className="w-full py-6 bg-transparent focus:ring-violet-600">
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                       </FormControl>
@@ -205,7 +207,7 @@ export default function Contact() {
                     <FormControl>
                       <Textarea
                         placeholder="Message"
-                        className="bg-transparent border-violet-900 focus-visible:ring-violet-600 min-h-[160px]"
+                        className="bg-transparent focus-visible:ring-violet-600 min-h-[160px]"
                         {...field}
                       />
                     </FormControl>
@@ -224,15 +226,36 @@ export default function Contact() {
           </Form>
         </div>
 
-        <div className="flex flex-col p-6 justify-center gap-8">
-          {/* <Image
-            src="/contact.png?height=600&width=600"
-            alt="Contact Kiya Kebe"
-            width={600}
-            height={400}
-            className="rounded-lg mx-auto"
-          /> */}
-          <img src="/contact.svg" alt="" />
+        <div className="bg-[url('/patterns/contact.png')] bg-cover bg-center flex flex-col border p-6 pt-28 gap-8 rounded-lg">
+          <div className="flex gap-4 items-center">
+            <div className="flex bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white p-3 aspect-square rounded-full items-center justify-center">
+              <Mail className="" />
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">Email</h4>
+              <a
+                href="mailto:kiyakebe799@gmail.com"
+                className="text-[#834EF0] underline tracking-wide"
+              >
+                kiyakebe799@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div className="flex gap-4 items-center">
+            <div className="flex bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white p-3 aspect-square rounded-full items-center justify-center">
+              <Phone className="" />
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">Phone</h4>
+              <a
+                href="tel:+251941709090"
+                className="text-[#834EF0] underline tracking-wide"
+              >
+                +251941709090
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
