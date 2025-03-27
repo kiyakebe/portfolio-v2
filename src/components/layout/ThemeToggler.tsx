@@ -14,9 +14,6 @@ import {
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();
-  React.useEffect(() => {
-    setTheme("dark");
-  }, []);
 
   return (
     <div className="">

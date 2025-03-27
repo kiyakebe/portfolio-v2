@@ -226,7 +226,8 @@ export default function Contact() {
           </Form>
         </div>
 
-        <div className="bg-[url('/patterns/contact.png')] bg-cover bg-center flex flex-col border p-6 pt-28 gap-8 rounded-lg">
+        {/* <div className="bg-[url('/patterns/contact.png')] bg-cover bg-center flex flex-col border p-6 pt-28 gap-8 rounded-lg overflow-hidden"> */}
+        <div className="bg-cover bg-center relative flex flex-col border p-6 pt-28 gap-8 rounded-lg overflow-hidden">
           <div className="flex gap-4 items-center">
             <div className="flex bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white p-3 aspect-square rounded-full items-center justify-center">
               <Mail className="" />
@@ -256,6 +257,10 @@ export default function Contact() {
               </a>
             </div>
           </div>
+          <div className="absolute right-12 top-0 bottom-0 border-r border-2 border-dashed border-white/20 -z-5"></div>
+          <div className="absolute left-0 right-0 bottom-12 border-b border-2 border-dashed border-white/20 -z-5"></div>
+          <div className="absolute -bottom-20 -right-20 w-[240px] h-[200px] rounded-full bg-[#20529a]/10 blur-[60px] mix-blend-soft-light -z-5"></div>
+          <div className="absolute -bottom-20 -right-20 w-[400px] h-80 rounded-full bg-[#34b2bf]/15 blur-[40px] mix-blend-screen -z-5"></div>
         </div>
       </div>
     </section>

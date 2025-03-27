@@ -20,9 +20,23 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Kiya Kebe | Fullstack Web Developer & Designer",
   description:
-    "I break down complex user experinece problems to create integritiy focussed solutions that connect you with your clients",
+    "Experienced software engineer with a proven track record of delivering innovative solutions. Passionate about collaborating with teams to create scalable, high-performance applications.",
   icons: {
     icon: "/logoLight.png",
+  },
+  authors: [{ name: "Kiya Kebe" }],
+  openGraph: {
+    title: "Kiya Kebe | Fullstack Web Developer & Designer",
+    description:
+      "Experienced software engineer with a proven track record of delivering innovative solutions. Passionate about collaborating with teams to create scalable, high-performance applications.",
+    images: [
+      {
+        url: "/kiya-kebe.webp",
+        width: 800,
+        height: 600,
+        alt: "Kiya Kebe",
+      },
+    ],
   },
 };
 
@@ -38,8 +52,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <div>

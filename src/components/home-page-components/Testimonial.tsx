@@ -14,12 +14,11 @@ import { testimonials } from "@/constants/testimonial_data";
 const TestimonialCard = ({
   name,
   content,
-  image,
   position,
 }: TestimonialType) => {
   return (
     <CarouselItem className="pl-2 basis-full md:basis-1/2 lg:basis-1/3 md:pl-4">
-      <Card className="w-full max-w-md mx-auto overflow-hidden transition-all dark:bg-[#1f1930] ">
+      <Card className="w-full max-w-md mx-auto overflow-hidden transition-all">
         <CardContent className="p-6">
           <div className="flex flex-col items-center text-center">
             <Quote className="w-10 h-10 mb-4 text-primary opacity-50" />

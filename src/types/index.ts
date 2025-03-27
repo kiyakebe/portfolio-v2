@@ -25,3 +25,12 @@ export interface PortfolioCardProps {
   categoryLabel: string;
   link: string;
 }
+
+export interface ExperienceItem {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  skills: string[];
+  icon: "code" | "server" | "globe" | "briefcase";
+}
