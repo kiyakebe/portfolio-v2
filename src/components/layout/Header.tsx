@@ -52,12 +52,12 @@ const Header = () => {
               <img
                 src="/logoDark.png"
                 alt="Logo"
-                className="me-4 w-8 hidden dark:inline-block"
+                className="me-4 w-6 hidden dark:inline-block"
               />
               <img
                 src="/logoLight.png"
                 alt="Logo"
-                className="me-4 w-8 dark:hidden"
+                className="me-4 w-6 dark:hidden"
               />
               Kiya Kebe
             </a>
