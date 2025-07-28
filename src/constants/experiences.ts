@@ -11,7 +11,7 @@ export const experiences: ExperienceItem[] = [
     icon: "code",
   },
   {
-    title: "Freelance Developer",
+    title: "Freelance Fullstack Developer",
     company: "Upwork",
     period: "Sep 2023 - Jul 2025",
     description:
