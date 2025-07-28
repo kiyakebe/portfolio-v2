@@ -6,10 +6,6 @@ export const navigationLinks: NavigationItemsType[] = [
     href: "/#services",
   },
   {
-    label: "Testimonial",
-    href: "/#testimonial",
-  },
-  {
     label: "Contact",
     href: "/#contact",
   },
