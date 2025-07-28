@@ -18,7 +18,7 @@ export const testimonials: TestimonialType[] = [
   {
     name: "Jack",
     content:
-      "I had an amazing time working with Kiya, and I am genuinely impressed by his expertise and professionalism. Throughout the entire process, he delivered outstanding work, carefully managing every detail. I highly recommend working with him.",
+      "Great work from Kiya, a reliable developer you can count on.",
     image: "https://randomuser.me/api/portraits",
     position: "Software Engineer",
   },
