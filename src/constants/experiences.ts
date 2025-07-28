@@ -20,7 +20,6 @@ export const experiences: ExperienceItem[] = [
       "React",
       "Node.js",
       "Full Stack Development",
-      "Client Communication",
     ],
     icon: "briefcase",
   },
@@ -30,7 +29,16 @@ export const experiences: ExperienceItem[] = [
     period: "Feb 2025 - Apr 2025",
     description:
       "Contributed to the development of Aloha, a real estate credit platform. Implemented modern UI/UX practices and integrated complex financial features.",
-    skills: ["React", "TypeScript", "UI/UX", "Financial Systems"],
+    skills: ["NextJS", "TypeScript", "UI/UX", "Real Estate Application", "AI"],
+    icon: "globe",
+  },
+  {
+    title: "Lead Frontend Developer (Started as Frontend Developer Intern)",
+    company: "Eskalate (A2SV)",
+    period: "Jul 2024 - May 2025",
+    description:
+      "I worked on developing a personal finance and credit card management dashboard, where I led the architecture of the A2SV Hub project. My focus was on ensuring high code quality and adherence to industry standards, which contributed to our team's success in outperforming over ten competing teams. Additionally, I led the development of the Digital Connect Ethiopia initiative, aiming to provide effective digital solutions for local needs.",
+    skills: ["NextJS", "TypeScript", "UI/UX", "Jest", "Cypress", "Redux", "Rest API"],
     icon: "globe",
   },
   {
