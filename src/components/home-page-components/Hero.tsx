@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="flex flex-col  gap-x-10 md:flex-row">
           <div className=" md:w-1/2 p-6 grid place-items-center">
             <div className="flex flex-col justify-center space-y-6">
-              <h3 className="text-xl">I am Kiya Kebe</h3>
+              <h3 className="text-xl">I am Kiya Kebe Dibaba</h3>
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
                 Passionate Software Engineer.
               </h1>

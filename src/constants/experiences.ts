@@ -4,7 +4,7 @@ export const experiences: ExperienceItem[] = [
   {
     title: "Full Stack and Mobile Developer",
     company: "Xyber Labs",
-    period: "2023 - Present",
+    period: "Dec 2024 - Jun 2025",
     description:
       "Developed and maintained a comprehensive telemedicine web and mobile application. Implemented responsive designs and user-friendly interfaces for healthcare services.",
     skills: ["React", "TypeScript", "Next.js", "Mobile Development"],
@@ -13,16 +13,21 @@ export const experiences: ExperienceItem[] = [
   {
     title: "Freelance Developer",
     company: "Upwork",
-    period: "2022 - Present",
+    period: "Sep 2023 - Jul 2025",
     description:
       "Successfully completed multiple frontend and fullstack projects through Upwork. Collaborated with international clients to deliver high-quality solutions across various domains.",
-    skills: ["React", "Node.js", "Full Stack Development", "Client Communication"],
+    skills: [
+      "React",
+      "Node.js",
+      "Full Stack Development",
+      "Client Communication",
+    ],
     icon: "briefcase",
   },
   {
     title: "Frontend Developer",
     company: "Zulu Tech",
-    period: "2022 - 2023",
+    period: "Feb 2025 - Apr 2025",
     description:
       "Contributed to the development of Aloha, a real estate credit platform. Implemented modern UI/UX practices and integrated complex financial features.",
     skills: ["React", "TypeScript", "UI/UX", "Financial Systems"],
@@ -31,10 +36,15 @@ export const experiences: ExperienceItem[] = [
   {
     title: "President",
     company: "CSEC-ASTU",
-    period: "2022 - 2023",
+    period: "Jul 2024 - Jul 2025",
     description:
       "Led the Computer Science and Engineering Club at ASTU, focusing on DSA, Development, Cybersecurity, and Data Science. Organized workshops and events to promote technical learning.",
-    skills: ["Leadership", "Technical Training", "Event Management", "Community Building"],
+    skills: [
+      "Leadership",
+      "Technical Training",
+      "Event Management",
+      "Community Building",
+    ],
     icon: "server",
   },
 ];
