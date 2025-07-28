@@ -17,8 +17,7 @@ export const testimonials: TestimonialType[] = [
   },
   {
     name: "Jack",
-    content:
-      "Great work from Kiya, a reliable developer you can count on.",
+    content: "Great work from Kiya, a reliable developer you can count on.",
     image: "https://randomuser.me/api/portraits",
     position: "Software Engineer",
   },
@@ -28,5 +27,12 @@ export const testimonials: TestimonialType[] = [
       "I had an amazing time working with Kiya, and I am genuinely impressed by his expertise and professionalism. Throughout the entire process, he delivered outstanding work, carefully managing every detail. I highly recommend working with him.",
     image: "https://randomuser.me/api/portraits",
     position: "Head of Education, A2sv",
+  },
+  {
+    name: "Fita Wegene",
+    content:
+      "I had the pleasure of working with Kiya on a complex AI-powered real estate saas project using Next.js. His deep expertise in Frontend Development, particularly with modern frameworks like Next.js, was instrumental in driving the project’s success. Kiya consistently delivered clean, high-quality code under tight deadlines, demonstrating strong problem-solving abilities and attention to detail.",
+    image: "https://randomuser.me/api/portraits",
+    position: "Frontend Team Lead, Zulu Tech",
   },
 ];
