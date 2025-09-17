@@ -5,6 +5,11 @@ import { ThemeProvider } from "@/provider/ThemeProvider";
 import Header from "@/components/layout/Header";
 import { ToastContainer } from "react-toastify";
 import Footer from "@/components/layout/Footer";
+import dynamic from "next/dynamic";
+
+const MobileDock = dynamic(() => import("@/components/layout/MobileDock"), {
+  ssr: false,
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -58,9 +63,12 @@ export default function RootLayout({
         >
           <div>
             <ToastContainer position="top-center" theme="colored" />
-            <Header />
+            <div className="hidden md:block">
+              <Header />
+            </div>
             {children}
             <Footer />
+            <MobileDock />
           </div>
         </ThemeProvider>
       </body>

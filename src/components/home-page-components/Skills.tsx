@@ -56,7 +56,7 @@ const skills: SkillCardProps[] = [
 
 const Skills = () => {
   return (
-    <section className="w-full dark:bg-[#1a1528] py-16 px-4 md:px-6 lg:px-8">
+    <section id="skills" className="w-full dark:bg-[#1a1528] py-16 px-4 md:px-6 lg:px-8">
       <div className="lg:container mx-auto px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">

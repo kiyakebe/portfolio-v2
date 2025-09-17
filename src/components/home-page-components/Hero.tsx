@@ -4,24 +4,12 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-[87vh] flex items-center  relative">
-      {/* <Image
-        src="/hero.png"
-        alt="hero bg"
-        width={900}
-        height={900}
-        className="rounded-lg hidden md:block -right-24 -top-64 absolute -z-10"
-      /> */}
+    <section id="home" className="min-h-[87vh] flex items-center  relative">
       <div className="mx-auto  px-4 sm:px-6 lg:px-8 md:py-24 md:lg:py-24 lg:max-w-[1440px]">
         <div className="flex flex-col  gap-x-10 md:flex-row">
           <div className=" md:w-1/2 p-6 grid place-items-center">
             <div className="flex flex-col justify-center space-y-6">
-              <h3 className="text-xl">I am Kiya Kebe Dibaba</h3>
-              {/* <div className="inline-block">
-                <span className="inline-flex items-center px-3 py-1 text-sm text-blue-600 bg-blue-50 rounded-full mb-8">
-                  
-                </span>
-              </div> */}
+              <h3 className="text-xl">I am Kiya Kebe</h3>
               <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold bg-gradient-to-r from-[#834EF0] to-[#4d279a] dark:to-[#ECE3FE]  text-transparent bg-clip-text">
                 Passionate Software Engineer.
               </h1>

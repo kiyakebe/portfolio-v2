@@ -12,6 +12,13 @@ const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  function scrollToSection(id: string) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 64;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
@@ -76,7 +83,19 @@ const Header = () => {
 
           <nav className="hidden md:flex space-x-5 lg:space-x-10">
             {navigationLinks.map((link, index) => (
-              <Link key={index} href={link.href} className="cursor-pointer">
+              <Link
+                key={index}
+                href={link.href}
+                onClick={(e) => {
+                  const hashIndex = link.href.lastIndexOf("#");
+                  if (hashIndex !== -1) {
+                    e.preventDefault();
+                    const id = link.href.slice(hashIndex + 1);
+                    scrollToSection(id);
+                  }
+                }}
+                className="cursor-pointer"
+              >
                 {link.label}
               </Link>
             ))}
@@ -84,6 +103,10 @@ const Header = () => {
           <div className="flex gap-4">
             <Link
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
               className="hidden md:flex items-center transition-all duration-300"
             >
               <Button className="w-full group bg-gradient-to-r from-[#834EF0] to-[#4d279a] text-white py-4 rounded-md">
@@ -103,6 +126,15 @@ const Header = () => {
               <Link
                 key={index}
                 href={link.href}
+                onClick={(e) => {
+                  const hashIndex = link.href.lastIndexOf("#");
+                  if (hashIndex !== -1) {
+                    e.preventDefault();
+                    const id = link.href.slice(hashIndex + 1);
+                    scrollToSection(id);
+                    setIsMobileMenuOpen(false);
+                  }
+                }}
                 className="block px-3 py-2 rounded-md text-base font-medium text-primary"
               >
                 {link.label}
@@ -110,7 +142,14 @@ const Header = () => {
             ))}
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
-            <Link href="#contact">
+            <Link
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+                setIsMobileMenuOpen(false);
+              }}
+            >
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">
                 Hire Me
               </button>
