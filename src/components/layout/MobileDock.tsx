@@ -23,31 +23,31 @@ export default function MobileDock() {
     () => [
       {
         key: "home",
-        icon: <Home className="h-6 w-6" />,
+        icon: <Home className="h-4 w-4" />,
         label: "Home",
         onClick: () => scrollToSection("home" as SectionId),
       },
       {
         key: "services",
-        icon: <Layers className="h-6 w-6" />,
+        icon: <Layers className="h-4 w-4" />,
         label: "Services",
         onClick: () => scrollToSection("services" as SectionId),
       },
       {
         key: "portfolio",
-        icon: <Images className="h-6 w-6" />,
+        icon: <Images className="h-4 w-4" />,
         label: "Portfolio",
         onClick: () => scrollToSection("portfolio" as SectionId),
       },
       {
         key: "testimonial",
-        icon: <MessageSquare className="h-6 w-6" />,
+        icon: <MessageSquare className="h-4 w-4" />,
         label: "Testimonials",
         onClick: () => scrollToSection("testimonial" as SectionId),
       },
       {
         key: "contact",
-        icon: <Send className="h-6 w-6" />,
+        icon: <Send className="h-4 w-4" />,
         label: "Contact",
         onClick: () => scrollToSection("contact" as SectionId),
       },
