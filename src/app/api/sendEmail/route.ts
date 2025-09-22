@@ -12,7 +12,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { firstName, lastName, email, phone, service, message } = data.body;
+    console.log(data)
+
+    const { fullName, email, service, message } = data.body;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -27,9 +29,9 @@ export async function POST(req: NextRequest) {
       await transporter.sendMail({
         from: email,
         to: process.env.EMAIL_TO,
-        subject: `Contact form submission from ${firstName} ${lastName}`,
+        subject: `Contact form submission from ${fullName}`,
         text: message,
-        html: `<p>You have a new contact form submission</p><p><strong>Name: </strong> ${firstName} ${lastName}</p><p><strong>Email: </strong> ${email}</p><p><strong>Message: </strong> ${message}</p> <p><strong>Phone: </strong> ${phone}</p> <p><strong>Service: </strong> ${service}</p>`,
+        html: `<p>You have a new contact form submission</p><p><strong>Name: </strong> ${fullName}</p><p><strong>Email: </strong> ${email}</p><p><strong>Message: </strong> ${message}</p> <p><strong>Service: </strong> ${service}</p>`,
       });
 
       return NextResponse.json({ message: "Email sent" }, { status: 200 });

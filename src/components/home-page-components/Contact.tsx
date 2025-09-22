@@ -31,7 +31,6 @@ import { toast } from "react-toastify";
 
 import axios from "axios";
 import { Mail, Phone } from "lucide-react";
-import Link from "next/link";
 
 const services = [
   { value: "fd", label: "Frontend Development" },
@@ -46,10 +45,8 @@ export default function Contact() {
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
+      fullName: "",
       email: "",
-      phone: "",
       service: "",
       message: "",
     },
@@ -103,76 +100,41 @@ export default function Contact() {
 
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <FormField
-                  control={form.control}
-                  name="firstName"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="First name"
-                          className="bg-transparent py-6 focus-visible:ring-violet-600 transition-all duration-200"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs text-red-500" />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="lastName"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Last name"
-                          className="bg-transparent py-6 focus-visible:ring-violet-600"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs text-red-500" />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          type="email"
-                          placeholder="Email address"
-                          className="bg-transparent py-6 focus-visible:ring-violet-600"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs text-red-500" />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          type="tel"
-                          placeholder="Phone number"
-                          className="bg-transparent py-6 focus-visible:ring-violet-600"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage className="text-xs text-red-500" />
-                    </FormItem>
-                  )}
-                />
-              </div>
+              <FormField
+                control={form.control}
+                name="fullName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input
+                        placeholder="Full name"
+                        className="bg-transparent py-6 focus-visible:ring-violet-600 transition-all duration-200"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-xs text-red-500" />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <Input
+                        type="email"
+                        placeholder="Email address"
+                        className="bg-transparent py-6 focus-visible:ring-violet-600"
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage className="text-xs text-red-500" />
+                  </FormItem>
+                )}
+              />
+
               <FormField
                 control={form.control}
                 name="service"
